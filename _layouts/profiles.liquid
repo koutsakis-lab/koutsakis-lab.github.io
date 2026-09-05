@@ -1,0 +1,51 @@
+---
+layout: page
+---
+<div class="post">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/group.jpeg" title="group photo" class="img-fluid rounded z-depth-1 banner" %}
+      </div>
+  </div>
+  <article>
+    {% if page.profiles %}
+      {% for profile in page.profiles %}
+        <hr>
+        {% if profile.image %}
+          <div class="profile-row profile-row--{% if profile.align == 'right' %}right{% else %}left{% endif %}">
+            <div class="profile profile-row__photo">
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+              {% if profile.more_info %}
+                <div class="more-info">{{ profile.more_info }}</div>
+              {% endif %}
+            </div>
+            <div class="profile-row__bio">
+              {% if profile.content %}
+                {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                {{ profile_content | markdownify }}
+              {% else %}
+                {{ content }}
+              {% endif %}
+            </div>
+          </div>
+        {% else %}
+          <div class="profile-section">
+            {% if profile.content %}
+              {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+              {{ profile_content | markdownify }}
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </article>
+</div>

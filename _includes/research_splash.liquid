@@ -1,0 +1,43 @@
+<section class="research-section">
+  <div
+    class="research-category-tile {{ item.mode }}"
+    {% if item.background %}style="--research-accent: {{ item.background }};"{% endif %}
+  >
+    <button
+      class="research-category-tile__header js-research-category-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="content-{{ item.grouping | slugify }}"
+    >
+      <div
+        class="research-category-tile__image"
+        style="background-image: url('{{ item.img }}'); {% if item.align %}background-position: {{ item.align }};{% endif %}"
+      ></div>
+
+      <div class="research-category-tile__image-scrim"></div>
+      <div class="research-category-tile__cover"></div>
+
+      <div class="research-category-tile__title-wrap">
+        <h2 class="research-category-tile__title">{{ item.title }}</h2>
+      </div>
+
+      <span class="research-category-tile__icon" aria-hidden="true">+</span>
+    </button>
+
+    <div
+      class="research-category-tile__content"
+      id="content-{{ item.grouping | slugify }}"
+      hidden
+    >
+      <div class="research-category-tile__content-inner">
+        {{ item.content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if item._styles %}
+<style>
+{{ item._styles }}
+</style>
+{% endif %}

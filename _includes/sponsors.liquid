@@ -1,0 +1,23 @@
+{% comment %}
+  Homepage sponsor / collaborator grid.
+
+  Logos, order, links, and current/past status live in _data/sponsors.yml.
+  Each logo sits on a light tile so that agency seals and dark-text wordmarks
+  stay legible in both the light and dark themes.
+{% endcomment %}
+
+<section class="sponsors" aria-label="Sponsors and collaborators">
+  <h2 class="sponsors__heading">Sponsors</h2>
+  <p class="sponsors__note">Our work is supported by</p>
+
+  <div class="sponsors__grid">
+    {% for sponsor in site.data.sponsors %}
+      {% assign logo_url = sponsor.logo | prepend: '/assets/img/logos/' | relative_url %}
+      <div class="sponsors__item">
+        {% if sponsor.url %}<a href="{{ sponsor.url }}" title="{{ sponsor.name | escape }}">{% endif %}
+        <img class="sponsors__img" src="{{ logo_url }}" alt="{{ sponsor.name | escape }}" title="{{ sponsor.name | escape }}" loading="eager">
+        {% if sponsor.url %}</a>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

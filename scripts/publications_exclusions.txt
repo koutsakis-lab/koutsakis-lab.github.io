@@ -1,0 +1,17 @@
+# Manual exclusions for update_publications.py
+#
+# Add one entry per line — either a DOI or an OpenAlex work ID (W1234567890).
+# Lines starting with # are comments. Blank lines are ignored.
+# The script checks this file on every run, so a new exclusion takes effect
+# the next time you regenerate the bib (no code change needed).
+#
+# How to find an entry's identifiers:
+#   DOI:        shown in the generated papers.bib as   doi={...}
+#   OpenAlex:   https://openalex.org/works?search=<title>
+#
+
+# ---- Known bad entries ----
+
+# "Reprint of: Surface temperature of a multi-layer thermal barrier coated wall..."
+# — Elsevier reprint duplicate of 10.1016/j.ijheatmasstransfer.2020.119645
+10.1016/j.ijheatmasstransfer.2020.120187

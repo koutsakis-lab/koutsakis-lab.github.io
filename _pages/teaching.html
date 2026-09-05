@@ -1,0 +1,16 @@
+---
+layout: page
+permalink: /teaching/
+title: Teaching
+description: Courses taught by Prof. Georgios Koutsakis in Mechanical Engineering at the University of New Mexico.
+nav: true
+nav_order: 4
+---
+
+<div class="publications teaching">
+    <ol class="bibliography">
+        {% for item in site.teaching %}
+        {% include teaching_class.liquid %}
+        {% endfor %}
+    </ol>
+</div>

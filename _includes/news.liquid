@@ -1,0 +1,26 @@
+<div class="news">
+  {% if site.news != blank %}
+    {% assign news_size = site.news | size %}
+    {% assign news = site.news | reverse %}
+    {% if include.limit and site.announcements.limit %}
+      {% assign news_limit = site.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+    {% for item in news limit: news_limit %}
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge font-weight-bold text-uppercase align-middle date ml-3">
+          {{ item.date | date: '%b %d, %Y' }}
+        <span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 mr-3 ml-md-0 mr-md-0 p-0 text">
+        {{ item.content }}
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>
+

@@ -1,0 +1,198 @@
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
+
+@use "sass:color";
+
+:root {
+  --unm: #{$unm-color};
+  --unm-light: #{$unm-red};
+  --unm-text: #{$unm-grey};
+  --unm-link: #{$unm-blue};
+
+  --global-bg-color: #{$white-color};
+  --global-code-bg-color: #{$code-bg-color-light};
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #{$unm-grey};
+  --global-theme-color: #{$unm-color};
+  --global-hover-color: #{$unm-color};
+  --global-hover-text-color: #{$white-color};
+  --global-footer-bg-color: #{$unm-grey};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: #{color.mix($unm-grey, $white-color, 15%)};
+  --global-card-bg-color: #{$white-color};
+  --global-highlight-color: #{$unm-red};
+  --global-back-to-top-bg-color: rgba(
+    /*
+    #{color.channel($black-color, "red", $space: rgb)},
+    #{color.channel($black-color, "green", $space: rgb)},
+    #{color.channel($black-color, "blue", $space: rgb)},
+    */
+    #{red($black-color)},
+    #{green($black-color)},
+    #{blue($black-color)},
+    0.4
+  );
+  --global-back-to-top-text-color: #{$white-color};
+  --global-newsletter-bg-color: #{$white-color};
+  --global-newsletter-text-color: #{$black-color};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  #light-toggle-system {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  .repo-img-light {
+    display: block;
+  }
+  .repo-img-dark {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+    bottom: $back-to-top-bottom;
+    right: $back-to-top-right;
+    height: $back-to-top-height;
+    width: $back-to-top-width;
+    z-index: $back-to-top-z-index;
+  }
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #{$grey-color-dark};
+  --global-code-bg-color: #{$code-bg-color-dark};
+  --global-text-color: #{$grey-color-light};
+  --global-text-color-light: #{$grey-color};
+  --global-theme-color: #{$unm-red};
+  --global-hover-color: #{$unm-red};
+  // --global-theme-color: #{$cyan-color};
+  // --global-hover-color: #{$cyan-color};
+  --global-hover-text-color: #{$white-color};
+  --global-footer-bg-color: #{$grey-color-light};
+  --global-footer-text-color: #{$grey-color-dark};
+  --global-footer-link-color: #{$black-color};
+  --global-distill-app-color: #{$grey-color-light};
+  --global-divider-color: #{color.mix($unm-grey, $white-color, 85%)};
+  // --global-divider-color: #424246;
+  // --global-card-bg-color: #{$grey-900};
+  --global-card-bg-color: #{$unm-grey};
+  --global-back-to-top-bg-color: rgba(
+    /*
+    #{color.channel($white-color, "red", $space: rgb)},
+    #{color.channel($white-color, "green", $space: rgb)},
+    #{color.channel($white-color, "blue", $space: rgb)},
+    */
+    #{red($white-color)},
+    #{green($white-color)},
+    #{blue($white-color)},
+    0.5
+  );
+  --global-back-to-top-text-color: #{$black-color};
+  --global-newsletter-bg-color: #{$grey-color-light};
+  --global-newsletter-text-color: #{$grey-color-dark};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  .repo-img-light {
+    display: none;
+  }
+  .repo-img-dark {
+    display: block;
+  }
+}
+
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+}
+
+// html[data-theme="dark"] .homepage,
+// html[data-theme="light"] .homepage {
+//   --global-text-color: #{$black-color};
+//   --global-bg-color: #{$white-color};
+// }
+
+html[data-theme="light"] .floatie {
+  *, .social .contact-icons a, .social .contact-icons a i::before {
+    color: #{$white-color};
+  }
+
+  a:hover,
+  .contact-icons a:hover,
+  .contact-icons a:hover i::before {
+    color: var(--global-theme-color);
+  }
+}
+
+html[data-theme="dark"] .site-brand__name {
+  color: var(--global-text-color);
+}

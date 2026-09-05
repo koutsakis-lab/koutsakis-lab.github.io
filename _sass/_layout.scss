@@ -1,0 +1,1185 @@
+// Listen I don't know why this is a separate file from _base.scss but ok
+
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+@use "sass:color";
+
+body {
+  // padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  h1 {
+    font-size:2rem;
+  }
+}
+
+h2 {
+  font-size:1.75rem;
+}
+
+h3 {
+  font-size:1.5rem;
+}
+
+h4 {
+  font-size:1.25rem;
+}
+
+body.fixed-top-nav {
+  // Add some padding for the navbar
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+
+/*****************************************************************************
+* People page
+*****************************************************************************/
+
+.profile {
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1; // make square image
+  }
+}
+
+.banner {
+  max-height:45vh;
+  object-fit:cover;
+  object-position:bottom;
+}
+
+@media screen and (max-height:720px){
+  .banner {
+    // object-position:center;
+    max-height:100vh;
+  }
+}
+
+.profile + .clearfix h5 + ul li a {
+  text-decoration: underline;
+  color: inherit;
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+.profile + .clearfix h5 + ul li a em {
+  color: inherit;
+}
+
+/*****************************************************************************
+* Homepage
+*****************************************************************************/
+
+body {
+  overflow-x: hidden !important;
+}
+
+:root {
+  --homepage-hero-top-space: 0rem;
+  --homepage-social-top-space: 0.25rem;
+  --homepage-content-top-space: 2rem;
+  --homepage-window-radius: 18px;
+  --homepage-window-aspect-ratio: 11 / 5;
+}
+
+.homepage-hero {
+  padding-top: var(--homepage-hero-top-space);
+  background: var(--global-bg-color);
+}
+
+.homepage-hero__social {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--homepage-social-top-space);
+}
+
+.homepage-post {
+  margin-top: var(--homepage-content-top-space);
+}
+
+.homepage-hero {
+  padding: var(--homepage-hero-top-space) 0 0 0;
+  margin-bottom: var(--homepage-hero-bottom-space);
+  background: var(--global-bg-color);
+}
+
+.homepage-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homepage-hero__header {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-hero__title {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.08;
+  color: var(--global-text-color);
+}
+
+.homepage-hero__window {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: var(--homepage-window-radius);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  background: var(--global-bg-color); // neutral backdrop behind the hero media while it loads
+}
+
+// Hero media: the static placeholder image now, the simulation reel later.
+// Fills the rounded window at a fixed aspect ratio. To switch to video, set
+// `hero_video` in _pages/about.md front matter — no markup changes needed.
+.homepage-hero__media {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--homepage-window-aspect-ratio);
+  object-fit: cover;
+  object-position: center;
+}
+
+:root {
+  --homepage-hero-top-space: 2rem;
+  --homepage-hero-bottom-space: 2rem;
+  --homepage-window-radius: 18px;
+  --homepage-window-aspect-ratio: 11 / 5; // about 2.2:1
+}
+
+.homepage-hero__social {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--homepage-social-top-space);
+}
+
+.homepage-hero__social .social {
+  text-align: center;
+}
+
+.homepage-post {
+  margin-top: var(--homepage-content-top-space);
+}
+
+.homepage-post .post-header {
+  display: none;
+}
+
+// Keep the intro prose at a readable measure (the sponsor marquee is a sibling
+// of .clearfix, so it stays full width).
+.homepage-post .clearfix {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*****************************************************************************
+* Research page — WIP (not yet committed)
+*****************************************************************************/
+
+// Full-bleed splash wrapper for the new research page concept
+.splash {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin: -3rem -50vw 3rem -50vw;
+}
+
+.hero {
+  pointer-events:none;
+  object-fit:cover;
+  object-position:bottom;
+  display:block;
+  width:100%;
+  height:calc(100vh - 136px);
+  min-height:calc(250px);
+}
+
+.floatie {
+  top:0;
+  right:0;
+  position:absolute;
+  z-index:2;
+  width:100%;
+}
+
+.floatie .container {
+  margin:0 auto;
+  overflow:hidden;
+}
+
+.floatie .container .inner {
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  animation:positioning 80s infinite;
+  -webkit-animation:positioning 80s infinite;
+  margin:50px auto;
+  max-width:100%;
+  padding:0px 15px;
+
+  .social {
+    text-align:inherit;
+  }
+}
+
+// Custom no-javascript carousel fader
+.carousell {
+  position:relative;
+}
+
+.carousell, .carousell figure {
+  width:100%;
+  min-height:calc(20vh + 150px);
+  height:calc(100vh - 136px);
+}
+
+.carousell,.carousell.mt3 {
+  margin-top:0!important;
+}
+
+.carousell > figure {
+  position:absolute;
+  animation:crossfade4 80s infinite;
+  -webkit-animation:crossfade4 80s infinite;
+}
+
+.carousell figure:nth-child(2) { animation-delay:-60s; }
+.carousell figure:nth-child(3) { animation-delay:-40s; }
+.carousell figure:nth-child(4) { animation-delay:-20s; }
+
+@keyframes crossfade4 {
+  0% {opacity:0;}
+  24.5% {opacity:0;}
+  25.5% {opacity:1;}
+  49.5% {opacity:1;}
+  50.5% {opacity:0;}
+  100% {opacity:0;}
+}
+@-webkit-keyframes crossfade4 {
+  0% {opacity:0;}
+  24.5% {opacity:0;}
+  25.5% {opacity:1;}
+  49.5% {opacity:1;}
+  50.5% {opacity:0;}
+  100% {opacity:0;}
+}
+
+// This code is NOT generalized and must be reordered according to the about page preamble
+// Order goes 4,1,2,3
+@keyframes positioning {
+  // Image 1: RDRE (Right)
+  0% {
+    opacity:0;
+  }
+  0.5% {
+    opacity:1;
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  24.5% {
+    opacity:1;
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  // Image 2 (Buble): Center
+  25% {
+    opacity:0;
+  }
+  25.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  49.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 3 (Blobs): Center
+  50% {
+    opacity:0;
+  }
+  50.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  74.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 4 (Fire): Left
+  75% {
+    opacity:0;
+  }
+  75.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  99.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  100% {
+    opacity:0;
+  }
+}
+// Repeat as above - for backward compatibility with webkit browser
+@-webkit-keyframes positioning {
+  // Image 1: RDRE (Right)
+  0% {
+    opacity:0;
+  }
+  0.5% {
+    opacity:1;
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  24.5% {
+    opacity:1;
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  // Image 2 (Buble): Center
+  25% {
+    opacity:0;
+  }
+  25.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  49.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 3 (Blobs): Center
+  50% {
+    opacity:0;
+  }
+  50.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  74.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 4 (Fire): Left
+  75% {
+    opacity:0;
+  }
+  75.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  99.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+// Increase font size
+article.large {
+  font-size:1.2rem;
+  line-height:1.75;
+}
+
+.homepage {
+  @media only screen and (max-width:576px){
+    h1 {
+      font-size:2rem;
+    }
+  }
+
+  h2 {
+    font-size:2rem;
+  }
+
+  hr {
+    border-top:1px solid transparent;
+    margin:1rem 0;
+  }
+}
+
+// Announcements section
+.news {
+  margin-top:1rem;
+  font-size:1rem;
+  line-height:1.5rem;
+
+  .badge {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background:var(--unm-light);
+    color:white;
+    border-radius:0.125rem;
+    padding:0.125rem 0.5rem 0.125rem 0.5rem;
+    font-weight:700;
+    display:inline-block;
+    inline-size:fit-content;
+    font-size:0.875rem;
+    white-space:nowrap;
+    text-align:center;
+    line-height:1;
+    margin-top:-0.125rem;
+  }
+}
+
+/******************************************************************************
+ * Code for Sponsors
+ ******************************************************************************/
+
+// Homepage sponsor grid (markup in _includes/sponsors.liquid, data in
+// _data/sponsors.yml). Logos are shown large, on white tiles so that seals
+// and dark-text wordmarks stay legible in both light and dark themes.
+.sponsors {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.sponsors__heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.sponsors__note {
+  color: var(--global-text-color-light);
+  margin-bottom: 1.75rem;
+}
+
+.sponsors__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.sponsors__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  min-height: 150px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.sponsors__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.sponsors__img {
+  max-width: 100%;
+  max-height: 105px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+html[data-theme="dark"] .sponsors__item {
+  background: #f4f4f4;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 576px) {
+  .sponsors__grid {
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    gap: 1rem;
+  }
+
+  .sponsors__item {
+    min-height: 115px;
+    padding: 0.9rem;
+  }
+
+  .sponsors__img {
+    max-height: 80px;
+  }
+}
+
+html[data-theme="light"] #navbar.homepage {
+  --global-bg-color:#{$grey-color-dark};
+  --global-text-color: #{$grey-color-light};
+}
+
+/* Navbar wordmark: lab name over a small unit line. */
+.site-brand {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.site-brand__name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--global-text-color);
+}
+
+.site-brand__unit {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+
+@media (max-width: 400px) {
+  .site-brand__unit {
+    display: none;
+  }
+}
+
+
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+.projects {
+  .card {
+    min-height: 150px;
+
+    .card-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      padding-top:0;
+      filter: brightness(1); /* Optional: Darkens the image for better text contrast */
+    }
+
+    .card-body {
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0)); /* Optional: Adds a translucent background for readability */
+    }
+  }
+}
+
+html[data-theme="light"] .projects .card .card-body {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
+.research .card {
+  margin-top:1rem;
+  background-size:cover;
+  position:relative;
+  overflow:hidden;
+
+  .card-text {
+    i[class^="fa"]{
+      font-size:1.5rem;
+      width:2rem;
+      display:inline-block;
+      text-align:center;
+      vertical-align:middle;
+    }
+
+    i[class^="fa"] + span {
+      display:inline-block;
+      vertical-align:middle;
+      max-width:calc(100% - 3rem); //icon width is 2rem
+      margin-left:0.5rem;
+      padding-left:1rem;
+      border-left:1px solid var(--global-text-color);
+    }
+  }
+
+  .card-display {
+    max-width:100%;
+    object-fit:cover;
+    // margin:auto;
+    border-radius:0.25rem;
+
+    @media only screen and (min-width:768px){
+      width:100%;
+      height:100%;
+      position:absolute;
+    }
+  }
+
+  .card-title {
+    z-index:1;
+    margin-bottom:1.5rem;
+    font-size:1.75rem;
+  }
+
+  div.list-groups {
+    display:flex;
+    flex-wrap:nowrap;
+    // gap:2rem;
+
+    @media only screen and (max-width:768px){
+      flex-wrap:wrap;
+    }
+  }
+
+  &:nth-of-type(odd) .list-groups {
+    flex-direction:row-reverse;
+
+    // @media only screen and (max-width:768px){
+    //   flex-direction:column-reverse;
+    // }
+  }
+
+  div.list-group {
+    margin-bottom:0;
+    flex-grow:1;
+    max-height:100%;
+    position:relative;
+
+    &.text-box {
+      // min-width:50%;
+      padding:1.25rem;
+    }
+
+    &.image-box {
+      min-width:50%;
+    }
+
+    &.padded-image {
+      margin:1.25rem;
+
+      @media only screen and (max-width:576px){
+        margin:0;
+      }
+    }
+  }
+}
+
+.projects.caps .card {
+  margin-top:0;
+
+  .card-body {
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+
+  figure {
+    height:100%;
+    margin-bottom:0;
+
+    img {
+      height:100%;
+      object-fit:cover;
+    }
+  }
+
+  .card-text {
+    font-size:1rem;
+    margin-bottom:0;
+  }
+
+  .card-title {
+    font-weight:500;
+  }
+}
+
+.subheader {
+  margin-top:2rem;
+
+  h2 {
+    font-size:2.5rem;
+  }
+}
+
+.dark .projects.sub-projects .card .card-body {
+  background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
+  --global-text-color:#{$white-color};
+}
+
+.light .projects.sub-projects .card .card-body {
+  background:linear-gradient(to bottom,rgba(255,255,255,1),rgba(255,255,255,0.5));
+  --global-text-color:#{$black-color};
+}
+
+.projects.sub-projects {
+  display:flex;
+
+  @media only screen and (max-width:576px){
+    flex-wrap:wrap;
+
+    .col {
+      flex-basis:unset; //because its late and idk what valid properties of flex-basis are...
+      padding-bottom:0;
+      margin-bottom:1rem;
+    }
+  }
+
+  .card {
+    margin-top:0;
+    min-height:0px;
+    // max-height:80px;
+    border:1px solid var(--global-text-color);
+
+    h3 {
+      font-size:1.25rem;
+      font-weight:500;
+
+      &.card-title {
+        margin-bottom:0;
+      }
+      // --global-text-color:unset;
+    }
+  }
+}
+
+// html[data-theme="light"] .projects.sub-projects .card .card-body {
+//   --global-text-color:#{$black-color};
+// }
+
+// html[data-theme="dark"] .projects.sub-projects .card .card-body {
+//   --global-text-color:#{$white-color};
+// }
+
+/* Research page: category-only accordion */
+
+.research-accordion-page {
+  display: block;
+}
+
+.research-section {
+  margin-bottom: 1rem;
+}
+
+.research-category-tile {
+  --research-accent: #BA0C2F;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: transparent;
+  border: 4px solid rgba(127, 127, 127, 0.22);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.research-category-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--research-accent);
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.12),
+    0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.research-category-tile__header {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 160px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+}
+
+.research-category-tile__image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+  filter: saturate(0.82) brightness(0.78);
+  transition: filter 0.42s ease;
+}
+
+/* This stays over the image even after the cover slides away */
+.research-category-tile__image-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.34) 0%,
+    rgba(0, 0, 0, 0.18) 38%,
+    rgba(0, 0, 0, 0.14) 68%,
+    rgba(0, 0, 0, 0.22) 100%
+  );
+  opacity: 0.9;
+  z-index: 1;
+  transition: opacity 0.42s ease;
+}
+
+/* Glass cover that slides away */
+.research-category-tile__cover {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.42s ease, backdrop-filter 0.42s ease, -webkit-backdrop-filter 0.42s ease;
+  will-change: opacity;
+
+  /* uniform colored glass */
+  background: color-mix(in srgb, var(--research-accent) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(115%);
+  -webkit-backdrop-filter: blur(16px) saturate(115%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.research-category-tile__title-wrap {
+  position: absolute;
+  left: 1.25rem;
+  right: 4rem;
+  bottom: 1rem;
+  z-index: 3;
+}
+
+.research-category-tile__title {
+  margin: 0;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1.1;
+  color: #ffffff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.28);
+}
+
+.research-category-tile__icon {
+  position: absolute;
+  right: 0.95rem;
+  bottom: 0.95rem;
+  z-index: 4;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(140, 21, 21, 0.24);
+  border: 5px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+}
+
+.research-category-tile:hover .research-category-tile__cover,
+.research-category-tile.is-open .research-category-tile__cover {
+  opacity: 0;
+  backdrop-filter: blur(0px) saturate(100%);
+  -webkit-backdrop-filter: blur(0px) saturate(100%);
+}
+
+.research-category-tile:hover .research-category-tile__image,
+.research-category-tile.is-open .research-category-tile__image {
+  filter: saturate(0.96) brightness(0.88);
+}
+
+.research-category-tile:hover .research-category-tile__image-scrim,
+.research-category-tile.is-open .research-category-tile__image-scrim {
+  opacity: 0.68;
+}
+
+.research-category-tile:hover .research-category-tile__icon {
+  background: rgba(140, 21, 21, 0.35);
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+.research-category-tile.is-open {
+  border-color: var(--research-accent);
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.14),
+    0 8px 22px rgba(0, 0, 0, 0.10);
+}
+
+.research-category-tile.is-open .research-category-tile__icon {
+  transform: rotate(45deg);
+  background: rgba(140, 21, 21, 0.42);
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.research-category-tile__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111111;
+  border-top: 1px solid rgba(140, 21, 21, 0.16);
+  transition: max-height 0.42s ease, opacity 0.28s ease;
+}
+
+.research-category-tile__content-inner {
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+}
+
+.research-category-tile__content-inner > :first-child {
+  margin-top: 0;
+}
+
+.research-category-tile__content-inner > :last-child {
+  margin-bottom: 0;
+}
+
+.research-category-tile__content-inner p,
+.research-category-tile__content-inner li,
+.research-category-tile__content-inner h3,
+.research-category-tile__content-inner h4,
+.research-category-tile__content-inner strong,
+.research-category-tile__content-inner em,
+.research-category-tile__content-inner span {
+  color: inherit;
+}
+
+.research-category-tile__content-inner a {
+  color: #BA0C2F;
+}
+
+html[data-theme='dark'] .research-category-tile {
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.42),
+    0 6px 16px rgba(0, 0, 0, 0.26);
+}
+
+html[data-theme='dark'] .research-category-tile:hover {
+  border-color: var(--research-accent);
+}
+
+html[data-theme='dark'] .research-category-tile__cover {
+  background: color-mix(in srgb, var(--research-accent) 58%, rgba(18, 18, 18, 0.28));
+  backdrop-filter: blur(16px) saturate(110%);
+  -webkit-backdrop-filter: blur(16px) saturate(110%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+}
+
+html[data-theme='dark'] .research-category-tile__content {
+  background: rgba(22, 22, 22, 0.95);
+  color: #f2f2f2;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme='dark'] .research-category-tile__content-inner a {
+  color: #e2a7a7;
+}
+
+.research-category-tile__content-inner img,
+.research-category-tile__content-inner video,
+.research-category-tile__content-inner iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .research-category-tile__header {
+    min-height: 140px;
+  }
+
+  .research-category-tile__title-wrap {
+    left: 1rem;
+    right: 3.6rem;
+    bottom: 0.9rem;
+  }
+
+  .research-category-tile__title {
+    font-size: 1.3rem;
+  }
+
+  .research-category-tile__icon {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+
+  .research-category-tile__content-inner {
+    padding: 1.1rem 1.1rem 1.35rem 1.1rem;
+  }
+}
+
+/* Research category expanded content layout */
+
+.research-detail-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-detail-top {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.research-detail-top__figure img,
+.research-detail-card img,
+.research-detail-top__figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+// When the top figure stacks two images (e.g. schematic over result),
+// give the lower one a little breathing room.
+.research-detail-top__figure img + img {
+  margin-top: 0.75rem;
+}
+
+.research-detail-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+// Placeholder standing in for a research figure that has not been made yet.
+// Replace the <div class="figure-placeholder"> with an <img> when the real
+// figure is ready — the surrounding layout needs no other change.
+.figure-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 2px dashed color-mix(in srgb, var(--research-accent, #BA0C2F) 45%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--research-accent, #BA0C2F) 7%, transparent);
+  opacity: 0.7;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.figure-placeholder + .figure-placeholder {
+  margin-top: 0.75rem;
+}
+
+.research-detail-caption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.research-detail-top__text {
+  text-align: left;
+}
+
+.research-detail-top__text p:last-child {
+  margin-bottom: 0;
+}
+
+.research-detail-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.research-detail-card {
+  text-align: center;
+}
+
+.research-detail-card h3 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.55rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.research-detail-card p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .research-detail-top {
+    grid-template-columns: 1fr;
+  }
+
+  .research-detail-bottom {
+    grid-template-columns: 1fr;
+  }
+}

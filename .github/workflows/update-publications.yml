@@ -1,0 +1,33 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Every Monday at 6 AM UTC
+  workflow_dispatch:       # Also allow manual trigger from the GitHub Actions tab
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write      # needed to commit the updated papers.bib
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch publications from OpenAlex
+        run: python scripts/update_publications.py
+
+      - name: Commit updated bibliography
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Auto-update publications from OpenAlex'
+          file_pattern: '_bibliography/papers.bib'

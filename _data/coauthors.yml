@@ -1,0 +1,34 @@
+# Co-author name disambiguation for the publications page.
+#
+# Keys are lowercase last names. Each entry lists the first-name variants that
+# appear in _bibliography/papers.bib together with a URL; matching authors then
+# render as links on the Publications page.
+#
+# To add someone:
+#   "lastname":
+#     - firstname: ["Full Name", "F.", "F. M."]
+#       url: https://their-page.example.edu
+
+"ghandhi":
+  - firstname: ["Jaal", "J.", "J. B.", "Jaal B."]
+    url: https://directory.engr.wisc.edu/me/faculty/ghandhi_jaal
+
+"clarke":
+  - firstname: ["David", "D.", "D. R.", "David R."]
+    url: https://seas.harvard.edu/person/david-clarke
+
+"hutchinson":
+  - firstname: ["John", "J.", "J. W.", "John W."]
+    url: https://seas.harvard.edu/person/john-hutchinson
+
+"nellis":
+  - firstname: ["Gregory", "G.", "G. F.", "Gregory F."]
+    url: https://directory.engr.wisc.edu/me/faculty/nellis_gregory
+
+"kokjohn":
+  - firstname: ["Sage", "S.", "S. L."]
+    url: https://directory.engr.wisc.edu/me/faculty/kokjohn_sage
+
+"sampath":
+  - firstname: ["Sanjay", "S."]
+    url: https://www.stonybrook.edu/commcms/matscieng/people/faculty/sampath
