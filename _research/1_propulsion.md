@@ -19,7 +19,7 @@ mode: dark
 
   <div class="research-detail-top__text">
     <p>
-      Space dominance depends on propulsion systems, and heat transfer often limits how efficient
+      Aerospace dominance depends on propulsion systems, and heat transfer often limits how efficient
       those devices can be. We study rockets, gas turbines, and rotating detonation engines from the
       wall inward: what the gas does to the surface, how much heat crosses it, and how long the
       material underneath survives.
