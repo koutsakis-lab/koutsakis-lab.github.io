@@ -34,10 +34,12 @@ which is pinned to **ORCID 0000-0002-8108-2591** and runs weekly via
 its DOI to `scripts/publications_exclusions.txt` and re-run the script.
 
 `_bibliography/accepted.bib` is the hand-maintained companion for accepted / in-press work that
-OpenAlex does not know about yet. It is rendered as its own "Accepted / in press" section by
-`_pages/publications.md` (`{% raw %}{% bibliography -f accepted %}{% endraw %}`) and is never
-touched by the generator. **When one of these papers is published, delete it from `accepted.bib`** —
-otherwise it will appear twice once OpenAlex indexes it.
+OpenAlex does not know about yet. `scripts/update_publications.py` merges its entries into the top
+of the generated `papers.bib` on every run (skipping any whose title it already found via
+OpenAlex), so accepted/in-press papers render as ordinary entries on the Publications page rather
+than a separate section — `accepted.bib` itself is never touched by the generator.
+**When one of these papers is published, delete it from `accepted.bib`** — otherwise the merge step
+starts silently skipping it (title now matches OpenAlex) and there's no reason to keep it around.
 
 ## Things that fail silently
 

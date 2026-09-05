@@ -62,4 +62,9 @@ profiles:
   - align: left
     image: people/skevas.jpg
     content: people/affiliates/about_skevas.md
+
+  - align: left
+    content: people/header_alumni.md
+  - align: left
+    content: people/alumni.md
 ---

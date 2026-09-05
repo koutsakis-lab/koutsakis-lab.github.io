@@ -493,8 +493,8 @@ article.large {
  ******************************************************************************/
 
 // Homepage sponsor grid (markup in _includes/sponsors.liquid, data in
-// _data/sponsors.yml). Logos are shown large, on white tiles so that seals
-// and dark-text wordmarks stay legible in both light and dark themes.
+// _data/sponsors.yml). Logos are transparent-background PNGs, shown large
+// directly on the page background — no card/tile behind them.
 .sponsors {
   margin-top: 2.5rem;
   text-align: center;
@@ -526,18 +526,11 @@ article.large {
   justify-content: center;
   padding: 1.5rem;
   min-height: 220px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .sponsors__item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .sponsors__img {
@@ -546,11 +539,6 @@ article.large {
   width: auto;
   height: auto;
   object-fit: contain;
-}
-
-html[data-theme="dark"] .sponsors__item {
-  background: #f4f4f4;
-  border-color: rgba(255, 255, 255, 0.12);
 }
 
 @media (max-width: 576px) {

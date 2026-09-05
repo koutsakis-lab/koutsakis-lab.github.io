@@ -5,17 +5,6 @@ title: Publications
 description: "See <a href='https://scholar.google.com/citations?user=_uw9_l0AAAAJ&hl=en'>Google Scholar</a> for the complete list."
 nav: true
 nav_order: 3
-_styles: >
-  .pub-section {
-    margin-top: 2rem;
-    padding-bottom: 0.35rem;
-    border-bottom: 1px solid var(--global-divider-color);
-    font-size: 1.35rem;
-    font-weight: 600;
-  }
-  .pub-section:first-of-type {
-    margin-top: 0;
-  }
 ---
 
 <!-- _pages/publications.md -->
@@ -25,12 +14,6 @@ _styles: >
 {% include bib_search.liquid %}
 
 <div class="publications">
-
-<h2 class="pub-section">Accepted / in press</h2>
-
-{% bibliography -f accepted %}
-
-<h2 class="pub-section">Published</h2>
 
 {% bibliography %}
 
@@ -53,27 +36,5 @@ document.addEventListener('DOMContentLoaded',function(){
       newLink.innerHTML = 'Request paper'
       linkBar.appendChild(newLink)
     });
-    // Hide a section heading ("Accepted / in press", "Published") while a
-    // bibsearch filter leaves nothing visible underneath it. Runs after
-    // bibsearch.js has applied its own .unloaded classes.
-    let searchBox = document.getElementById('bibsearch');
-    if (searchBox) {
-      searchBox.addEventListener('input', function () {
-        setTimeout(function () {
-          document.querySelectorAll('h2.pub-section').forEach(function (heading) {
-            let node = heading.nextElementSibling;
-            let hasVisibleEntry = false;
-            while (node && !node.classList.contains('pub-section')) {
-              if (node.tagName === 'OL' && node.querySelector(':scope > li:not(.unloaded)')) {
-                hasVisibleEntry = true;
-                break;
-              }
-              node = node.nextElementSibling;
-            }
-            heading.classList.toggle('unloaded', !hasVisibleEntry);
-          });
-        }, 0);
-      });
-    }
 });
 </script>

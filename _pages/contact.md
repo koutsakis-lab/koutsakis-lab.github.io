@@ -27,6 +27,13 @@ _styles: >
       margin: 1rem 0;
     }
   }
+  .contact-map {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+  }
 ---
 
 <div class="contact-figures">
@@ -48,6 +55,12 @@ Albuquerque, NM 87106
 [koutsakis@unm.edu](mailto:koutsakis@unm.edu)
 
 [UNM campus map](https://www.unm.edu/campus-maps.html) · [Directions to the lab](https://maps.google.com/?q=2420+Alamo+Ave+SE+Suite+103,+Albuquerque,+NM+87106)
+
+<iframe class="contact-map" loading="lazy"
+  src="https://maps.google.com/maps?q=Mechanical%20Engineering%20College%20of%20Engrg%20Rm%20202%2C%20Albuquerque%2C%20NM%2087131%2C%20United%20States&t=m&z=4&output=embed&iwloc=near"
+  title="Map showing the Department of Mechanical Engineering, University of New Mexico"
+  aria-label="Map showing the Department of Mechanical Engineering, University of New Mexico">
+</iframe>
 
 ## **Join us**
 

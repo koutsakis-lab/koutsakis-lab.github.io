@@ -2,7 +2,13 @@
 """Generate _bibliography/papers.bib from scratch using OpenAlex.
 
 Fetches all works for ORCID 0000-0002-8108-2591 and writes a clean papers.bib.
-The existing file is completely replaced on every run — no merging, no patching.
+The OpenAlex-derived portion is completely replaced on every run — no merging,
+no patching of THAT part. Entries from _bibliography/accepted.bib (hand-
+maintained, not yet indexed by OpenAlex) are merged in at the top of the file
+so accepted/in-press work shows up as regular entries on the Publications
+page; once OpenAlex indexes a paper, its accepted.bib entry is skipped here
+(matched by normalized title) — delete it from accepted.bib at that point to
+avoid confusion, since accepted.bib is otherwise never modified by this script.
 
 Filters applied:
   - Excluded types: dataset, paratext, peer-review, grant, editorial,
@@ -31,6 +37,7 @@ from pathlib import Path
 
 ORCID = "0000-0002-8108-2591"
 BIB_PATH = Path("_bibliography/papers.bib")
+ACCEPTED_PATH = Path("_bibliography/accepted.bib")
 EXCLUSIONS_PATH = Path("scripts/publications_exclusions.txt")
 API_BASE = "https://api.openalex.org"
 CONTACT_EMAIL = "koutsakis@unm.edu"
@@ -528,6 +535,27 @@ def work_to_bibtex(work: dict, key: str) -> str:
     return '\n'.join(lines)
 
 
+def _normalize_title(title: str) -> str:
+    """Lowercase, strip braces/punctuation, collapse whitespace for fuzzy title comparison."""
+    t = re.sub(r'[{}]', '', title or '')
+    t = re.sub(r'[^a-z0-9]+', ' ', t.lower())
+    return t.strip()
+
+
+def load_accepted_entries() -> list:
+    """Parse _bibliography/accepted.bib into a list of (normalized_title, raw_entry_text)."""
+    if not ACCEPTED_PATH.exists():
+        return []
+    text = ACCEPTED_PATH.read_text(encoding='utf-8')
+    entries = []
+    for m in re.finditer(r'@\w+\{[^@]*?\n\}', text, re.S):
+        block = m.group(0).strip()
+        title_m = re.search(r'title\s*=\s*\{(.*?)\}\s*,', block, re.S)
+        title = _normalize_title(title_m.group(1)) if title_m else ''
+        entries.append((title, block))
+    return entries
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -573,13 +601,27 @@ def main():
 
     print(f'\nGenerating {len(entries)} BibTeX entries...')
 
+    # --- Merge in accepted/in-press entries not yet indexed by OpenAlex ---
+    generated_titles = {_normalize_title(w.get('title')) for w in works}
+    accepted = load_accepted_entries()
+    accepted_blocks = [block for title, block in accepted if title not in generated_titles]
+    skipped = len(accepted) - len(accepted_blocks)
+    if accepted_blocks:
+        print(f"Merging {len(accepted_blocks)} accepted/in-press entr"
+              f"{'y' if len(accepted_blocks) == 1 else 'ies'} from {ACCEPTED_PATH}")
+    if skipped:
+        print(f'  {skipped} accepted.bib entr{"y" if skipped == 1 else "ies"} now indexed by '
+              f'OpenAlex — delete from {ACCEPTED_PATH} to avoid confusion.')
+    entries = accepted_blocks + entries
+
     timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     header = (
         f'% Auto-generated from OpenAlex on {timestamp}\n'
         f'% ORCID: {ORCID}\n'
         f'% Do not edit by hand — run scripts/update_publications.py to regenerate\n'
         f'% To permanently exclude an entry, add its DOI or OpenAlex ID\n'
-        f'% to scripts/publications_exclusions.txt\n\n'
+        f'% to scripts/publications_exclusions.txt\n'
+        f'% Accepted/in-press entries below are merged in from {ACCEPTED_PATH.as_posix()}\n\n'
     )
 
     BIB_PATH.write_text(header + '\n\n'.join(entries) + '\n', encoding='utf-8')
