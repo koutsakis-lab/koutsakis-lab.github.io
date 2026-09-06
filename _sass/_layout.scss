@@ -67,15 +67,70 @@ body.sticky-bottom-footer {
 }
 
 .banner {
-  max-height:45vh;
-  object-fit:cover;
-  object-position:bottom;
+  max-height: 45vh;
+  object-fit: cover;
+  object-position: center top; // keep faces in frame; the crop grows from the bottom
+}
+
+// On a narrow/tall phone screen, width is the binding constraint and the
+// height cap barely matters, so this is a no-op there. On a wide desktop
+// viewport, 45vh alone (decoupled from width) can force an extreme,
+// letterboxed crop; capping height to a fraction of width too keeps the
+// crop proportional to the photo instead.
+@media screen and (min-width: 992px) {
+  .banner {
+    max-height: min(45vh, 32vw);
+  }
 }
 
 @media screen and (max-height:720px){
   .banner {
     // object-position:center;
     max-height:100vh;
+  }
+}
+
+/******************************************************************************
+* Homepage two-column intro (text + stacked figures)
+******************************************************************************/
+
+.homepage-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.homepage-columns__figures {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.homepage-columns__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.homepage-columns__figure--light {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

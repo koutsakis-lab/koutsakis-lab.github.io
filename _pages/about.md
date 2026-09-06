@@ -15,6 +15,20 @@ sponsors: true # Includes sponsors
 hero_image: /assets/img/albuquerque.jpg
 ---
 
+<div class="homepage-columns" markdown="1">
+<div class="homepage-columns__text" markdown="1">
+
 Aerospace dominance depends on propulsion systems, and heat transfer often limits the overall efficiency of those devices. Our group studies the coupled processes of heat transfer, fracture mechanics, and propulsion materials at gas–wall interfaces, with a particular focus on multilayered materials for extreme environments.
 
 Rockets, gas turbines, and rotating detonation engines all push materials to the point where thermal performance and mechanical durability work against each other. We combine experiments, analytical heat-transfer theory, and materials characterization to understand that tradeoff and to design architectures that survive it. Our flagship effort is the world's first academic **Rotating Detonation Engine Materials Testbed**, built at the University of New Mexico to evaluate coatings and wall architectures under realistic detonation environments.
+
+</div>
+<div class="homepage-columns__figures">
+  <div class="homepage-columns__figure homepage-columns__figure--light">
+    <img src="/assets/img/multilayer_overview_reversed_colors.png" alt="Multilayer material architecture overview">
+  </div>
+  <div class="homepage-columns__figure homepage-columns__figure--light">
+    <img src="/assets/img/multilayer_overview.png" alt="Multilayer material architecture applications: batteries, engines, fuel cells, rockets, spacecraft, and gas turbines">
+  </div>
+</div>
+</div>
