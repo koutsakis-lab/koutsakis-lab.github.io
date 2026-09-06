@@ -113,8 +113,6 @@ body.sticky-bottom-footer {
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
   img {
     width: 100%;
@@ -122,9 +120,12 @@ body.sticky-bottom-footer {
   }
 }
 
+.homepage-columns__figure--dark {
+  background: #000000;
+}
+
 .homepage-columns__figure--light {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 @media screen and (max-width: 768px) {

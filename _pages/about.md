@@ -24,7 +24,7 @@ Rockets, gas turbines, and rotating detonation engines all push materials to the
 
 </div>
 <div class="homepage-columns__figures">
-  <div class="homepage-columns__figure homepage-columns__figure--light">
+  <div class="homepage-columns__figure homepage-columns__figure--dark">
     <img src="/assets/img/multilayer_overview_reversed_colors.png" alt="Multilayer material architecture overview">
   </div>
   <div class="homepage-columns__figure homepage-columns__figure--light">
