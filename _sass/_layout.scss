@@ -102,6 +102,13 @@ body.sticky-bottom-footer {
   margin-bottom: 1rem;
 }
 
+// When the figures block is commented out in about.md, the text becomes
+// the grid's only child — let it span full width instead of leaving an
+// empty second column.
+.homepage-columns__text:only-child {
+  grid-column: 1 / -1;
+}
+
 .homepage-columns__figures {
   display: flex;
   flex-direction: column;

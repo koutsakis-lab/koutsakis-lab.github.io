@@ -23,10 +23,12 @@ Aerospace dominance depends on propulsion systems, and heat transfer often limit
 Rockets, gas turbines, and rotating detonation engines all push materials to the point where thermal performance and mechanical durability work against each other. We combine experiments, analytical heat-transfer theory, and materials characterization to understand that tradeoff and to design architectures that survive it. Our flagship effort is the world's first academic **Rotating Detonation Engine Materials Testbed**, built at the University of New Mexico to evaluate coatings and wall architectures under realistic detonation environments.
 
 </div>
+{% comment %}
 <div class="homepage-columns__figures">
   <div class="homepage-columns__figure">
     <img class="homepage-columns__figure-img homepage-columns__figure-img--dark" src="/assets/img/multilayer_overview_reversed_colors.png" alt="Multilayer material architecture overview">
     <img class="homepage-columns__figure-img homepage-columns__figure-img--light" src="/assets/img/multilayer_overview.png" alt="Multilayer material architecture applications: batteries, engines, fuel cells, rockets, spacecraft, and gas turbines">
   </div>
 </div>
+{% endcomment %}
 </div>
