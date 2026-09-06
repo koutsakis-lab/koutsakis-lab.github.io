@@ -111,8 +111,8 @@ body.sticky-bottom-footer {
 // Single figure box: only one of the two images is visible at a time,
 // chosen by the site's resolved theme (html[data-theme], set by
 // assets/js/theme.js from the user's explicit choice or system preference).
-// The box's own background switches with it so image and backdrop always
-// match — never both images stacked at once.
+// Light theme sits on a white card; dark theme has no card at all — the
+// image (already designed for a dark background) sits directly on the page.
 .homepage-columns__figure {
   display: flex;
   align-items: center;
@@ -131,7 +131,8 @@ body.sticky-bottom-footer {
 }
 
 html[data-theme="dark"] .homepage-columns__figure {
-  background: #000000;
+  background: none;
+  padding: 0;
 }
 
 html[data-theme="dark"] .homepage-columns__figure-img--dark {
