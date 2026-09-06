@@ -1,6 +1,6 @@
 **Georgios Koutsakis**  
-*Assistant Professor, Department of Mechanical Engineering* 
-Postdoctoral Fellow, School of Engineering and Applied Sciences, Harvard University, 2023
+*Assistant Professor, Department of Mechanical Engineering*  
+Postdoctoral Fellow, School of Engineering and Applied Sciences, Harvard University, 2023  
 Ph.D. University of Wisconsin–Madison, 2022  
 Diploma, University of Western Macedonia, Greece, 2016
 
