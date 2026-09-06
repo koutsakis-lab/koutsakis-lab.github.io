@@ -4,25 +4,25 @@
 # `logo` is a filename in assets/img/logos/.
 # `url`  is optional — when present the logo becomes a link.
 
-- name: U.S. Department of Energy
-  logo: doe_logo.png
-  url: https://www.energy.gov
+- name: U.S. Department of War
+  logo: dow_logo.png
+  url: https://www.defense.gov
   current: true
 - name: Office of Naval Research
   logo: onr_logo.png
-  url: https://www.onr.navy.mil
+  url: https://www.onr.navy.mil/
   current: true
 - name: DEVCOM Army Research Laboratory
   logo: arl_logo.png
   url: https://arl.devcom.army.mil
   current: true
-- name: U.S. Department of War
-  logo: dow_logo.png
-  url: https://www.defense.gov
+- name: Solvus Global
+  logo: solvus_logo.png
+  url: https://www.solvusglobal.com
   current: true
-- name: NASA
-  logo: nasa_logo.png
-  url: https://www.nasa.gov
+- name: U.S. Department of Energy
+  logo: doe_logo.png
+  url: https://www.energy.gov
   current: true
 - name: National Energy Technology Laboratory
   logo: netl_logo.png
@@ -30,5 +30,13 @@
   current: true
 - name: Aerojet Rocketdyne | L3Harris
   logo: ajrd_logo.jpg
-  url: https://www.l3harris.com/all-capabilities/aerojet-rocketdyne
+  url: https://www.l3harris.com/
+  current: true
+- name: PNM
+  logo: pnm_logo.png
+  url: https://www.pnm.com
+  current: true
+- name: NASA
+  logo: nasa_logo.png
+  url: https://www.nasa.gov
   current: true

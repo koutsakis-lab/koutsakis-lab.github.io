@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded',function(){
       let title = encodeURIComponent(e.querySelectorAll('.title')[0].textContent);
       let newLink = document.createElement('a');
       newLink.classList += 'btn btn-sm z-depth-0'
-      newLink.href = 'mailto:koutsakis@unm.edu?subject=Requesting paper&body=Hi there,%0D%0AMay I request a copy of the paper "'+title+'" please?%0D%0AThank you!'
+      newLink.href = 'mailto:koutsakis@unm.edu?subject=Requesting publication&body=Hello,%0D%0A%0D%0ACould you provide a copy of the paper "'+title+'" please?%0D%0A%0D%0AThank you!'
       newLink.innerHTML = 'Request paper'
       linkBar.appendChild(newLink)
     });
