@@ -1365,21 +1365,21 @@ ninja-keys::part(ninja-input-wrapper) {
 /* Institutional brand bar + footer, styled to UNM brand colors */
 
 body > header {
-  padding-top:30px;
+  padding-top:36px;
 }
 
 .unm-brand-bar + .fixed-top {
-  top:30px;
+  top:36px;
 }
 
 .unm-brand-bar img {
-  height:17.5px;
+  height:21px;
   display:block;
 }
 
 .unm-brand-bar {
   width: 100%;
-  height: 30px;
+  height: 36px;
   position: fixed;
   z-index: 2147483647;
   top: 0;
@@ -1447,7 +1447,7 @@ body > header {
   font-variant-ligatures: discretionary-ligatures;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 6.25px;
+  margin-top: 7.5px;
   white-space: nowrap;
   color: #ffffff;
   font-size: 20px;

@@ -24,11 +24,9 @@ Rockets, gas turbines, and rotating detonation engines all push materials to the
 
 </div>
 <div class="homepage-columns__figures">
-  <div class="homepage-columns__figure homepage-columns__figure--dark">
-    <img src="/assets/img/multilayer_overview_reversed_colors.png" alt="Multilayer material architecture overview">
-  </div>
-  <div class="homepage-columns__figure homepage-columns__figure--light">
-    <img src="/assets/img/multilayer_overview.png" alt="Multilayer material architecture applications: batteries, engines, fuel cells, rockets, spacecraft, and gas turbines">
+  <div class="homepage-columns__figure">
+    <img class="homepage-columns__figure-img homepage-columns__figure-img--dark" src="/assets/img/multilayer_overview_reversed_colors.png" alt="Multilayer material architecture overview">
+    <img class="homepage-columns__figure-img homepage-columns__figure-img--light" src="/assets/img/multilayer_overview.png" alt="Multilayer material architecture applications: batteries, engines, fuel cells, rockets, spacecraft, and gas turbines">
   </div>
 </div>
 </div>

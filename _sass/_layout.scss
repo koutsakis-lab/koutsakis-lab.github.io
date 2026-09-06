@@ -108,11 +108,17 @@ body.sticky-bottom-footer {
   gap: 1.25rem;
 }
 
+// Single figure box: only one of the two images is visible at a time,
+// chosen by the site's resolved theme (html[data-theme], set by
+// assets/js/theme.js from the user's explicit choice or system preference).
+// The box's own background switches with it so image and backdrop always
+// match — never both images stacked at once.
 .homepage-columns__figure {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
+  background: #ffffff; // light theme (default)
 
   img {
     width: 100%;
@@ -120,12 +126,20 @@ body.sticky-bottom-footer {
   }
 }
 
-.homepage-columns__figure--dark {
+.homepage-columns__figure-img--dark {
+  display: none;
+}
+
+html[data-theme="dark"] .homepage-columns__figure {
   background: #000000;
 }
 
-.homepage-columns__figure--light {
-  background: #ffffff;
+html[data-theme="dark"] .homepage-columns__figure-img--dark {
+  display: block;
+}
+
+html[data-theme="dark"] .homepage-columns__figure-img--light {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
