@@ -48,13 +48,15 @@ The University of New Mexico
 Albuquerque, NM 87131  
 (505) 277-2761
 
+[Campus map](https://map.concept3d.com/?id=1984#!ct/58447,67657,70294,81672,82811?m/630008?s/mechanical) · [Get directions](https://www.google.com/maps/place/Mechanical+Engineering/@35.0823654,-106.6259811,17z)
+
 **Laboratory**  
 2420 Alamo Ave SE, Suite 103  
 Albuquerque, NM 87106
 
-[koutsakis@unm.edu](mailto:koutsakis@unm.edu)
+[Get directions](https://maps.google.com/?q=2420+Alamo+Ave+SE+Suite+103,+Albuquerque,+NM+87106)
 
-[UNM campus map](https://map.concept3d.com/?id=1984) · [Directions to the lab](https://maps.google.com/?q=2420+Alamo+Ave+SE+Suite+103,+Albuquerque,+NM+87106)
+[koutsakis@unm.edu](mailto:koutsakis@unm.edu)
 
 ## **Join us**
 
