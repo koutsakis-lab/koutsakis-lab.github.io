@@ -92,6 +92,7 @@ layout: default
       <hr>
       <h2>Announcements</h2>
       {% include news.liquid limit=true %}
+      <a href="{{ '/news/' | relative_url }}">See more</a>
     {% endif %}
 
     {% if page.selected_papers %}

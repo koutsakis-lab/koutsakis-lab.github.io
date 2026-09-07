@@ -54,7 +54,7 @@ Albuquerque, NM 87106
 
 [koutsakis@unm.edu](mailto:koutsakis@unm.edu)
 
-[UNM campus map](https://www.unm.edu/campus-maps.html) · [Directions to the lab](https://maps.google.com/?q=2420+Alamo+Ave+SE+Suite+103,+Albuquerque,+NM+87106)
+[UNM campus map](https://map.concept3d.com/?id=1984) · [Directions to the lab](https://maps.google.com/?q=2420+Alamo+Ave+SE+Suite+103,+Albuquerque,+NM+87106)
 
 ## **Join us**
 
@@ -83,7 +83,7 @@ Interested candidates should email Prof. Koutsakis directly with:
 UNM undergraduates interested in a part-time research appointment during the semester, or full-time over the summer, should email Prof. Koutsakis with their interest, availability, and year of study.
 
 <iframe class="contact-map" loading="lazy"
-  src="https://maps.google.com/maps?q=Mechanical%20Engineering%20College%20of%20Engrg%20Rm%20202%2C%20Albuquerque%2C%20NM%2087131%2C%20United%20States&t=m&z=4&output=embed&iwloc=near"
+  src="https://maps.google.com/maps?q=Mechanical%20Engineering%20Building%2C%20University%20of%20New%20Mexico%2C%20Albuquerque%2C%20NM%2087131%2C%20United%20States&t=m&z=16&output=embed&iwloc=near"
   title="Map showing the Department of Mechanical Engineering, University of New Mexico"
   aria-label="Map showing the Department of Mechanical Engineering, University of New Mexico">
 </iframe>

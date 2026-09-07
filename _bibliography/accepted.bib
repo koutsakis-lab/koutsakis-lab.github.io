@@ -1,4 +1,5 @@
-% Accepted / in-press work that is not yet indexed by OpenAlex.
+% Accepted / in-press work that is not yet indexed by OpenAlex, PLUS any
+% published paper OpenAlex cannot surface via the ORCID query below.
 %
 % This file is hand-maintained and is NOT touched by scripts/update_publications.py,
 % so entries here survive the weekly regeneration of papers.bib.
@@ -6,6 +7,21 @@
 % IMPORTANT: once a paper here is published, OpenAlex will pick it up and it will
 % appear in papers.bib automatically — delete the entry from this file at that
 % point, or it will be listed twice on the Publications page.
+
+% Already published (SAE 2021), but OpenAlex lists the author as the bare,
+% undisambiguated string "George Koutsakis" with no linked Author ID or
+% ORCID at all (openalex.org/works/W3122233219) — the ORCID-filtered query
+% in update_publications.py can never find it. Kept here permanently; if
+% OpenAlex ever links it to the canonical author, the title-match skip logic
+% will drop this copy automatically on the next regeneration.
+@article{koutsakis2021assessment,
+  title={Assessment of In-Cylinder Thermal Barrier Coatings over a Full Vehicle Drive Cycle},
+  author={Koutsakis, G. and Miles, S. R. and Ghandhi, J. B.},
+  journal={SAE Technical Paper},
+  number={2021-01-0456},
+  year={2021},
+  doi={10.4271/2021-01-0456},
+}
 
 @inproceedings{vrocharis2027canonical,
   title={Canonical Performance Parameters for Rotating Detonation Engine Materials},

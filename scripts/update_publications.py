@@ -52,8 +52,8 @@ EXTRA_AUTHOR_IDS = []
 # Note: 'dissertation' (theses) and 'report' (technical reports) are
 # intentionally excluded — the group does not list either on the page.
 ALLOWED_TYPES = frozenset({
-    'article', 'preprint', 'proceedings-article', 'book-chapter',
-    'book', 'review', 'letter',
+    'article', 'preprint', 'proceedings-article', 'conference-paper',
+    'book-chapter', 'book', 'review', 'letter',
 })
 
 # Source names that identify a preprint server (case-insensitive substring match)
