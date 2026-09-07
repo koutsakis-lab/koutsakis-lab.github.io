@@ -7,8 +7,8 @@ nav_order: 6
 _styles: >
   .contact-figures {
     float: right;
-    width: 40%;
-    min-width: 300px;
+    width: 55%;
+    min-width: 380px;
     margin: 0.25rem 0 1rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ Interested candidates should email Prof. Koutsakis directly with:
 UNM undergraduates interested in a part-time research appointment during the semester, or full-time over the summer, should email Prof. Koutsakis with their interest, availability, and year of study.
 
 <iframe class="contact-map" loading="lazy"
-  src="https://maps.google.com/maps?q=Mechanical%20Engineering%20Building%2C%20University%20of%20New%20Mexico%2C%20Albuquerque%2C%20NM%2087131%2C%20United%20States&t=m&z=16&output=embed&iwloc=near"
+  src="https://maps.google.com/maps?q=Building%20122%2C%20Redondo%20Drive%2C%20University%20of%20New%20Mexico%2C%20Albuquerque%2C%20NM%2087131&t=m&z=17&output=embed&iwloc=near"
   title="Map showing the Department of Mechanical Engineering, University of New Mexico"
   aria-label="Map showing the Department of Mechanical Engineering, University of New Mexico">
 </iframe>
