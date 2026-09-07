@@ -10,9 +10,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 sponsors: true # Includes sponsors
 
-# Location map embed shown at the bottom of the page, below Sponsors.
-map: "https://maps.google.com/maps?q=Building%20122%2C%20Redondo%20Drive%2C%20University%20of%20New%20Mexico%2C%20Albuquerque%2C%20NM%2087131&t=m&z=17&output=embed&iwloc=near"
-
 # Homepage hero image. Swap in a video later by adding `hero_video:` — the
 # layout will use hero_image as the poster frame automatically.
 hero_image: /assets/img/albuquerque.jpg
