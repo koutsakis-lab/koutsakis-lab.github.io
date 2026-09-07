@@ -157,6 +157,14 @@ html[data-theme="dark"] .homepage-columns__figure-img--light {
   }
 }
 
+.homepage-map {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
 .profile + .clearfix h5 + ul li a {
   text-decoration: underline;
   color: inherit;
