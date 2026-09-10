@@ -11,7 +11,7 @@ mode: dark
 <div class="research-detail-layout">
 
 <!-- Top section -->
-<div class="research-detail-top">
+<div class="research-detail-top research-detail-top--wide-figure">
   <div class="research-detail-top__figure">
     <img src="/assets/img/research/dynamic_heat_insulation.png" alt="Wall surface temperature over one detonation cycle for substrate-only, traditional insulation, and dynamic heat insulation architectures, compared against the gas temperature">
     <p class="research-detail-caption"><i>Wall surface temperature across one detonation cycle. A dynamic coating (red) tracks the gas instead of sitting at a fixed elevated temperature, shrinking the difference that drives the heat loss.</i></p>

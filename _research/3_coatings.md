@@ -11,7 +11,7 @@ mode: dark
 <div class="research-detail-layout">
 
 <!-- Top section -->
-<div class="research-detail-top">
+<div class="research-detail-top research-detail-top--wide-figure">
   <div class="research-detail-top__figure">
     <img src="/assets/img/research/fracture_maps.png" alt="Space-time maps through a coated wall over an engine cycle showing temperature, in-plane stress, and energy release rate, with a marker at the peak driving force inside the coating">
     <p class="research-detail-caption"><i>Temperature, stress, and crack driving force through a coated wall across a cycle. The peak energy release rate falls inside the coating, not at the interface — which is where the coating actually fails.</i></p>
