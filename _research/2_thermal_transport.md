@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thermal Transport
+title: Heat Transfer Modeling & Diagnostics
 img: /assets/img/lab/rde_testbed.png
 align: center
 background: "#007A86"

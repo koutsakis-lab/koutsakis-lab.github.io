@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rotating Detonation Engines
+title: Propulsion — Rotating Detonation Engines
 img: /assets/img/lab/rde_firing.jpeg
 align: center
 background: "#BA0C2F"
