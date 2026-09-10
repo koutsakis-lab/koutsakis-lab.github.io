@@ -640,7 +640,7 @@ html[data-theme="light"] #navbar.homepage {
   --global-text-color: #{$grey-color-light};
 }
 
-/* Navbar wordmark: lab name over a small unit line. */
+/* Navbar wordmark: the lab name. */
 .site-brand {
   display: inline-flex;
   flex-direction: column;
@@ -652,20 +652,6 @@ html[data-theme="light"] #navbar.homepage {
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--global-text-color);
-}
-
-.site-brand__unit {
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--global-theme-color);
-}
-
-@media (max-width: 400px) {
-  .site-brand__unit {
-    display: none;
-  }
 }
 
 
