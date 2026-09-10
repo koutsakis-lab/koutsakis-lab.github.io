@@ -1223,6 +1223,26 @@ html[data-theme='dark'] .research-category-tile__content-inner a {
   align-items: start;
 }
 
+// Variant for a tile whose lead figure is too wide to read at a third of the
+// row. The first card takes a row to itself; the other two sit centred
+// beneath it. The six-column track makes those two exactly as wide as a
+// standard card, so the cards stay a consistent size across every tile.
+.research-detail-bottom--feature {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.research-detail-bottom--feature > .research-detail-card:first-child {
+  grid-column: 1 / -1;
+}
+
+.research-detail-bottom--feature > .research-detail-card:nth-child(2) {
+  grid-column: 2 / 4;
+}
+
+.research-detail-bottom--feature > .research-detail-card:nth-child(3) {
+  grid-column: 4 / 6;
+}
+
 .research-detail-card {
   text-align: center;
 }
@@ -1277,5 +1297,15 @@ html[data-theme='dark'] .research-category-tile__content-inner a {
 
   .research-detail-bottom {
     grid-template-columns: 1fr;
+  }
+
+  // Drop the feature variant back to a single column, and release the
+  // explicit column placements so they don't create implicit tracks.
+  .research-detail-bottom--feature {
+    grid-template-columns: 1fr;
+  }
+
+  .research-detail-bottom--feature > .research-detail-card {
+    grid-column: auto;
   }
 }

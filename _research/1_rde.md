@@ -35,14 +35,14 @@ mode: dark
     <ul>
       <li><ins>Dynamic heat insulation:</ins> Low-conductivity, low-heat-capacity coatings whose thermal time constant is matched to the detonation wave frequency, reducing cycle-mean heat loss and the parasitic deflagration that follows a hot wall.</li>
       <li><ins>Materials evaluation:</ins> Putting candidate wall architectures into a real detonation environment and ranking them on the metrics that actually govern engine design.</li>
-      <li><ins>Regenerative cooling:</ins> Flow and heat transfer in additively manufactured mini channels, which make the backside boundary condition a design variable rather than a constraint.</li>
+      <li><ins>Active cooling:</ins> Flow and heat transfer in additively manufactured mini channels, which make the backside boundary condition a design variable rather than a constraint.</li>
       <li><ins>Design scaling:</ins> Non-dimensional groups that collapse coating properties, thickness, and wave frequency onto a single measure of coating effectiveness.</li>
     </ul>
   </div>
 </div>
 
 <!-- Bottom section -->
-<div class="research-detail-bottom">
+<div class="research-detail-bottom research-detail-bottom--feature">
 
   <div class="research-detail-card">
     <img src="/assets/img/research/multilayer_spatiotemporal.png" alt="Gas temperature trace alongside temperature distributions through substrate-only, traditional coating, and dynamic insulation walls at three times in the detonation cycle">
