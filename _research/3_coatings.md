@@ -31,8 +31,8 @@ mode: dark
     </p>
     <p>Our work in this area includes:</p>
     <ul>
-      <li><ins>Fracture-based durability analysis:</ins> Crank-resolved energy release rate through the coating thickness, predicting the depth at which delamination initiates rather than only whether the coating insulates.</li>
-      <li><ins>Delamination in real engines:</ins> Model predictions checked against coatings run to failure on high-output diesel pistons.</li>
+      <li><ins>Fracture-based durability analysis:</ins> Time-resolved energy release rate through the coating thickness, predicting the depth at which delamination initiates rather than only whether the coating insulates.</li>
+      <li><ins>Delamination in real engines:</ins> Model predictions checked against coatings run to failure on high-output reciprocating engines.</li>
       <li><ins>Architecture optimization:</ins> Ranking coating thickness and property combinations on performance and durability together, over a full drive cycle rather than a single operating point.</li>
       <li><ins>Coatings under detonation:</ins> Extending the same framework to the far higher frequencies and heat fluxes of a rotating detonation environment.</li>
     </ul>

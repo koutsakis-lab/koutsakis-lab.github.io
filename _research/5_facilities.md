@@ -21,21 +21,20 @@ mode: dark
     <p>
       The lab operates out of a dedicated high-bay space at 2420 Alamo Ave SE in Albuquerque, a few
       minutes from UNM's main campus. It is built around a rotating detonation engine configured as
-      a materials testbed: the purpose is not to optimize an engine, but to put candidate wall
-      materials into a real detonation environment and measure what happens to them.
+      a materials testbed: the purpose is not to optimize the thermodynamic performance, but to put candidate wall materials into a real detonation environment and measure what happens to them.
     </p>
     <p>
-      Because the coupons are swappable and the operating point repeatable, materials can be
+      Because the walls are swappable and the operating point repeatable, materials can be
       compared on equal terms — which is the part that is normally missing when coatings are
-      evaluated in someone else's engine at someone else's condition.
+      evaluated in different engines at different conditions.
     </p>
     <p>Capabilities include:</p>
     <ul>
-      <li><ins>Rotating detonation engine testbed:</ins> Hydrogen–air operation with instrumented, swappable wall sections for materials evaluation.</li>
+      <li><ins>Rotating detonation engine testbed:</ins> Fuel-agnostic air breathing operation with instrumented, swappable wall sections for materials evaluation.</li>
       <li><ins>Thermal instrumentation:</ins> Calorimetric heat flux measurement, embedded thermocouples, and thin-film surface temperature sensors for high-rate transient loading.</li>
-      <li><ins>High-speed diagnostics:</ins> Imaging and high-rate pressure acquisition to resolve wave number, wave speed, and stability across a firing.</li>
+      <li><ins>High-speed diagnostics:</ins> Imaging and high-rate pressure acquisition to resolve wave number, wave speed, and stability across a hot fire test.</li>
       <li><ins>Forced-convection flow loop:</ins> A separate instrumented rig for measuring friction and heat transfer in additively manufactured cooling channels.</li>
-      <li><ins>Sample preparation and post-test analysis:</ins> Evaluation of coated and multilayered specimens before and after exposure.</li>
+      <li><ins>Sample preparation and post-test analysis:</ins> Materials evaluation of coated and multilayered specimens before and after exposure.</li>
     </ul>
   </div>
 </div>
