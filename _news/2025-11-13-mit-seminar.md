@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-10-15 09:00:00-0600  # TODO: confirm exact date
+date: 2025-11-13 09:00:00-0600
 inline: true
 related_posts: false
 ---
