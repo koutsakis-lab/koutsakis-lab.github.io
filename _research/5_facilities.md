@@ -34,6 +34,7 @@ mode: dark
       <li><ins>Rotating detonation engine testbed:</ins> Hydrogen–air operation with instrumented, swappable wall sections for materials evaluation.</li>
       <li><ins>Thermal instrumentation:</ins> Calorimetric heat flux measurement, embedded thermocouples, and thin-film surface temperature sensors for high-rate transient loading.</li>
       <li><ins>High-speed diagnostics:</ins> Imaging and high-rate pressure acquisition to resolve wave number, wave speed, and stability across a firing.</li>
+      <li><ins>Forced-convection flow loop:</ins> A separate instrumented rig for measuring friction and heat transfer in additively manufactured cooling channels.</li>
       <li><ins>Sample preparation and post-test analysis:</ins> Evaluation of coated and multilayered specimens before and after exposure.</li>
     </ul>
   </div>
@@ -61,11 +62,12 @@ mode: dark
   </div>
 
   <div class="research-detail-card">
-    <img src="/assets/img/lab/rde_firing.jpeg" alt="The rotating detonation engine during a hot fire">
-    <h3>Hot Fire Operations</h3>
+    <img src="/assets/img/research/convection_test_rig.jpg" alt="The forced convection test rig: an instrumented flow loop with Coriolis mass flowmeter, mass flow regulator and thermocouples, and a close-up of the additively manufactured test section heated by a Bunsen burner">
+    <h3>Convection Test Rig</h3>
     <p>
-      Firing campaigns expose test articles to the detonation environment under controlled,
-      repeatable conditions so that materials can be compared on equal terms.
+      A forced-convection loop for additively manufactured cooling channels. Coriolis-metered flow,
+      instrumented inlet and outlet, and a burner-heated test section give friction and heat
+      transfer data for channels as they are printed, roughness included.
     </p>
   </div>
 
