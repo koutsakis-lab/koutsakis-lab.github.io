@@ -4,3 +4,6 @@ Gemfile.lock
 # OS / editor junk
 .DS_Store
 __pycache__/
+
+# Preview written by scripts/build_facility_figure.py --show
+scripts/figures/facility_overview_guides.png
