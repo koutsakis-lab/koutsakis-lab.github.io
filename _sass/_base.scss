@@ -1373,7 +1373,7 @@ body > header {
 }
 
 .unm-brand-bar img {
-  height:21px;
+  height:28px;
   display:block;
 }
 
@@ -1447,7 +1447,9 @@ body > header {
   font-variant-ligatures: discretionary-ligatures;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 7.5px;
+  // Keeps the wordmark centred in the 36px bar: (36 - 28) / 2. The bar
+  // height is fixed, so this has to move whenever the logo height does.
+  margin-top: 4px;
   white-space: nowrap;
   color: #ffffff;
   font-size: 20px;
