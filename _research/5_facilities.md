@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Facilities
-label: Facilities
 img: /assets/img/lab/lab_space.png
 align: center
 background: "#4A4A48"
