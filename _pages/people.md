@@ -25,8 +25,10 @@ profiles:
     image: people/cestari.jpeg
     content: people/grad/about_cestari.md
   - align: left
+    image: people/takouridis.jpeg
     content: people/grad/about_takouridis.md
   - align: left
+    image: people/pascual.jpeg
     content: people/grad/about_pascual.md
   - align: left
     image: people/samra.jpeg
@@ -48,6 +50,7 @@ profiles:
     image: people/castro.jpeg
     content: people/undergrad/about_castro.md
   - align: left
+    image: people/aguayo_quintana.jpeg
     content: people/undergrad/about_aguayo_quintana.md
 
   - align: left

@@ -1,6 +1,6 @@
 **Diego Aguayo Quintana**  
 *Mechanical Engineering, Senior*
 
-Diego works on RDE facility development, including CAD design and machining.
+Diego focuses on CAD modeling and the cooling set-up for the RDE facility.
 
 [email](mailto:aguayo@unm.edu)
