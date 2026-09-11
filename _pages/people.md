@@ -42,9 +42,6 @@ profiles:
   - align: left
     content: people/header_undergrad.md
   - align: left
-    image: people/buenviaje.jpeg
-    content: people/undergrad/about_buenviaje.md
-  - align: left
     image: people/canales.jpeg
     content: people/undergrad/about_canales.md
   - align: left

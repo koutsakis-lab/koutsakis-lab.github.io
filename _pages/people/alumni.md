@@ -10,6 +10,7 @@
 
 ### Undergraduate Alumni
 
+- **Jasmine Buenviaje** (2026)
 - **Logan Bermudez** (2026)
 - **Alejandro Ramirez De Jesus** (2026)
 - **Jeremy Williams** (2026)
