@@ -25,28 +25,25 @@ profiles:
     image: people/cestari.jpeg
     content: people/grad/about_cestari.md
   - align: left
-    image: people/salinas.jpeg
-    content: people/grad/about_salinas.md
+    content: people/grad/about_takouridis.md
+  - align: left
+    content: people/grad/about_pascual.md
   - align: left
     image: people/samra.jpeg
     content: people/grad/about_samra.md
+  - align: left
+    content: people/grad/about_monge_vela.md
+  - align: left
+    image: people/reyes_contreras.jpeg
+    content: people/grad/about_reyes_contreras.md
+  - align: left
+    image: people/wolbrecht.jpeg
+    content: people/grad/about_wolbrecht.md
   - align: left
     content: people/header_undergrad.md
   - align: left
     image: people/buenviaje.jpeg
     content: people/undergrad/about_buenviaje.md
-  - align: left
-    image: people/reyes_contreras.jpeg
-    content: people/undergrad/about_reyes_contreras.md
-  - align: left
-    image: people/wolbrecht.jpeg
-    content: people/undergrad/about_wolbrecht.md
-  - align: left
-    image: people/ramirez_de_jesus.jpeg
-    content: people/undergrad/about_ramirez_de_jesus.md
-  - align: left
-    image: people/williams.jpeg
-    content: people/undergrad/about_williams.md
   - align: left
     image: people/canales.jpeg
     content: people/undergrad/about_canales.md
@@ -54,8 +51,7 @@ profiles:
     image: people/castro.jpeg
     content: people/undergrad/about_castro.md
   - align: left
-    image: people/bermudez.jpeg
-    content: people/undergrad/about_bermudez.md
+    content: people/undergrad/about_aguayo_quintana.md
 
   - align: left
     content: people/header_affiliates.md
