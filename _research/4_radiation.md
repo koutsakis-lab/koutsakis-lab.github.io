@@ -46,7 +46,7 @@ mode: dark
 
   <div class="research-detail-card">
     <img src="/assets/img/research/radiation_window.png" alt="Blackbody spectral emissive power at 2000, 2500 and 3000 K plotted against the absorption coefficient of a plasma-sprayed gadolinium zirconate coating, showing a transparent window below about 6 microns">
-    <h3>The Radiation Window</h3>
+    <h3>The Optical Gap</h3>
     <p>
       A hot gas radiates almost entirely below 6&nbsp;µm. That is exactly where today's coatings
       barely absorb at all — so the radiation passes through the barrier and into the alloy.

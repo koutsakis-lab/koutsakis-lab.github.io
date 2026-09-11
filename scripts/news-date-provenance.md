@@ -48,7 +48,6 @@ two must match.
 | 2025-04-16 | provost-fund-2025 | spring award cycle |
 | 2025-05-09 | flores-honors-thesis | end of spring term |
 | 2025-06-02 | doe-utsr | first business day of the award period |
-| 2025-06-03 | arl-award | Solvus sent the contract package on 3 June |
 | 2025-07-01 | aristotle-seminar | Greece visit adjacent to Irsee, 22–27 June |
 | 2025-08-01 | onr-award | inherited from the original news item |
 | 2025-11-12 | harvard-seminar | same New England trip as the confirmed MIT seminar on 13 Nov |
