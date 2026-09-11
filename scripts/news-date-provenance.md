@@ -54,7 +54,6 @@ two must match.
 | 2025-11-14 | solvus-seminar | same New England trip as the confirmed MIT seminar on 13 Nov |
 | 2026-01-13 | scitech | AIAA SciTech 2026 ran 12–16 Jan; inherited from the original item |
 | 2026-01-21 | soe-research-innovation | appointment began 2026; placed at spring term start |
-| 2026-02-03 | nsf-workshop | workshops run midweek |
 | 2026-02-11 | aiaa-faculty-liaison | appointment began 2026 |
 | 2026-03-24 | keio | export-control form filed 14 Mar, travel still upcoming on the 16th |
 | 2026-04-15 | skevas-poster | spring 2026 |
