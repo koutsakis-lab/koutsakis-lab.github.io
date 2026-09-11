@@ -34,6 +34,7 @@ profiles:
     image: people/samra.jpeg
     content: people/grad/about_samra.md
   - align: left
+    image: people/monge_vela.jpeg
     content: people/grad/about_monge_vela.md
   - align: left
     image: people/reyes_contreras.jpeg

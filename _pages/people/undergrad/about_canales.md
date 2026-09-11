@@ -1,6 +1,6 @@
 **Brendan Canales**  
-*Mechanical Engineering, Junior*
+*Mechanical Engineering, Senior*
 
-Brendan contributes to the lab's rotating detonation engine materials and heat flux measurement campaigns.
+Brendan works on LabVIEW development for the HADES RDE to support experiments and operation.
 
 [email](mailto:bcanales1@unm.edu)
