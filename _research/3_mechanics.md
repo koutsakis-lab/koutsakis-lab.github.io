@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Fracture Mechanics of Multilayers
+label: Mechanics
 img: /assets/img/research/fracture_maps.png
 align: center
 background: "#8A4B1A"

@@ -10,6 +10,17 @@ _styles: >
   .post-description {font-size:1rem;}
 ---
 
+<nav class="research-quicknav" aria-label="Jump to a research area">
+  {% for item in site.research %}
+    <button
+      type="button"
+      class="research-quicknav__chip"
+      data-target="content-{{ item.grouping | slugify }}"
+      style="--research-accent: {{ item.background }};"
+    >{{ item.label | default: item.title }}</button>
+  {% endfor %}
+</nav>
+
 <div class="research-page research-accordion-page">
   {% for item in site.research %}
     {% include research_splash.liquid %}
@@ -19,6 +30,7 @@ _styles: >
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const toggles = document.querySelectorAll('.js-research-category-toggle');
+    const chips = document.querySelectorAll('.research-quicknav__chip');
 
     function openTile(tile) {
       const toggle = tile.querySelector('.js-research-category-toggle');
@@ -36,6 +48,8 @@ _styles: >
         content.style.maxHeight = fullHeight + 'px';
         content.style.opacity = '1';
       });
+
+      updateActiveChip(tile);
     }
 
     function closeTile(tile) {
@@ -63,24 +77,63 @@ _styles: >
         },
         { once: true }
       );
+
+      updateActiveChip(null);
+    }
+
+    function openOnly(tile) {
+      const isOpen = tile.classList.contains('is-open');
+
+      document.querySelectorAll('.research-category-tile.is-open').forEach(function (openTileEl) {
+        if (openTileEl !== tile) {
+          closeTile(openTileEl);
+        }
+      });
+
+      if (!isOpen) {
+        openTile(tile);
+      }
+
+      return !isOpen;
+    }
+
+    function updateActiveChip(tile) {
+      const contentId = tile ? tile.querySelector('.research-category-tile__content').id : null;
+
+      chips.forEach(function (chip) {
+        chip.classList.toggle('is-active', chip.dataset.target === contentId);
+      });
+    }
+
+    function fixedHeaderOffset() {
+      let offset = 0;
+      document.querySelectorAll('.unm-brand-bar, .navbar.fixed-top').forEach(function (el) {
+        offset += el.getBoundingClientRect().height;
+      });
+      return offset;
     }
 
     toggles.forEach(function (toggle) {
       toggle.addEventListener('click', function () {
         const tile = toggle.closest('.research-category-tile');
-        const isOpen = tile.classList.contains('is-open');
-
-        document.querySelectorAll('.research-category-tile.is-open').forEach(function (openTileEl) {
-          if (openTileEl !== tile) {
-            closeTile(openTileEl);
-          }
-        });
-
-        if (isOpen) {
-          closeTile(tile);
-        } else {
-          openTile(tile);
+        const isNowOpen = openOnly(tile);
+        if (!isNowOpen) {
+          updateActiveChip(null);
         }
+      });
+    });
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        const content = document.getElementById(chip.dataset.target);
+        if (!content) {
+          return;
+        }
+        const tile = content.closest('.research-category-tile');
+        openOnly(tile);
+
+        const targetTop = tile.getBoundingClientRect().top + window.scrollY - fixedHeaderOffset() - 16;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
       });
     });
 

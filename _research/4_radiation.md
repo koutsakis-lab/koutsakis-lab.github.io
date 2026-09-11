@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Thermal Radiation & Materials Design
+label: Radiation
 img: /assets/img/research/fibrous_sem_ct.jpg
 align: center
 background: "#2C2A29"

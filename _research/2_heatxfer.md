@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Heat Transfer Modeling & Diagnostics
+label: Heat Transfer
 img: /assets/img/lab/rde_testbed.png
 align: center
 background: "#007A86"
