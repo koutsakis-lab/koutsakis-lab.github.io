@@ -102,7 +102,7 @@ body.sticky-bottom-footer {
   margin-bottom: 1rem;
 }
 
-// When the figures block is commented out in about.md, the text becomes
+// When the figures block is commented out in home.md, the text becomes
 // the grid's only child — let it span full width instead of leaving an
 // empty second column.
 .homepage-columns__text:only-child {
@@ -259,7 +259,7 @@ body {
 
 // Hero media: the static placeholder image now, the simulation reel later.
 // Fills the rounded window at a fixed aspect ratio. To switch to video, set
-// `hero_video` in _pages/about.md front matter — no markup changes needed.
+// `hero_video` in _pages/home.md front matter — no markup changes needed.
 .homepage-hero__media {
   display: block;
   width: 100%;

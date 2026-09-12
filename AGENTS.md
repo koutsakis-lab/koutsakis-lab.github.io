@@ -16,7 +16,7 @@ edit directly.
 | Change                                  | File(s)                                                     |
 | --------------------------------------- | ----------------------------------------------------------- |
 | Site identity, feature flags, plugins   | `_config.yml`                                                |
-| Homepage text and hero image            | `_pages/about.md`                                            |
+| Homepage text and hero image            | `_pages/home.md`                                             |
 | Research tiles (the /research/ page)    | `_research/*.md` — one file per expandable tile              |
 | People                                  | `_pages/people.md` + bios in `_pages/people/{grad,undergrad,affiliates}/` |
 | Courses                                 | `_teaching/*.md`                                             |

@@ -131,7 +131,7 @@ the bibliography.
 
 ## Editing content
 
-### Homepage — `_pages/about.md`
+### Homepage — `_pages/home.md`
 
 Front matter toggles what's shown:
 ```yaml

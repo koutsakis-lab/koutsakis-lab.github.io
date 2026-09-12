@@ -1,6 +1,6 @@
 ---
-layout: about
-title: about
+layout: home
+title: home
 permalink: /
 subtitle: Koutsakis Lab<br><span class="homepage-hero__tagline">Propulsion, Heat Transfer and Materials</span>
 nav: false
@@ -12,7 +12,7 @@ sponsors: true # Includes sponsors
 
 # Homepage hero image. Swap in a video later by adding `hero_video:` — the
 # layout will use hero_image as the poster frame automatically.
-hero_image: /assets/img/albuquerque.jpg
+hero_image: /assets/img/albuquerque_with_logo.jpg
 ---
 
 <div class="homepage-columns" markdown="1">
