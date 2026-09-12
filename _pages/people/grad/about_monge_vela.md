@@ -1,6 +1,6 @@
 **Maximiliano Monge Vela**  
 *M.S. Student, Mechanical Engineering*
 
-Max works on materials design and radiation barrier coatings in high-temperature environments.
+Max works on design and analysis of radiation barrier coatings for high-temperature propulsion materials.
 
 [linkedin](https://www.linkedin.com/in/maximiliano-monge-vela-314688241)
