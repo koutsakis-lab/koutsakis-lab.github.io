@@ -221,6 +221,11 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  // Query container for the tagline below: sizing the tagline off of this
+  // element's own (inline) width, rather than the raw viewport, keeps it in
+  // sync with the width Bootstrap's `.container` actually leaves available
+  // (100vw minus its fixed 15px-per-side padding) instead of overflowing it.
+  container-type: inline-size;
 }
 
 .homepage-hero__title {
@@ -232,10 +237,13 @@ body {
 }
 
 // Kept on one line at any width the hero title can occupy, so the font size
-// shrinks with viewport width rather than wrapping to a second line.
+// shrinks with viewport width rather than wrapping to a second line. Sized in
+// `cqw` (see `container-type` above) rather than `vw` so it tracks the actual
+// available width — using `vw` here made the text overflow the `.container`
+// padding on phones and get silently clipped by `body`'s `overflow-x: hidden`.
 .homepage-hero__tagline {
   display: inline-block;
-  font-size: clamp(1.35rem, 4.68vw, 2.7rem);
+  font-size: clamp(1.35rem, 4.68cqw, 2.7rem);
   white-space: nowrap;
 }
 
