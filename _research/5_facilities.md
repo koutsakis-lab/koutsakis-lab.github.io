@@ -13,15 +13,17 @@ mode: dark
 <!-- Top section -->
 <div class="research-detail-top">
   <div class="research-detail-top__figure">
-    <img src="/assets/img/research/facility_overview.jpg" alt="Four views of the lab: the rotating detonation engine test stand and air supply in the high bay, the engine during a hot fire, a wave angle versus time map of the detonation, and a high-speed image sequence of the wave circling the annulus">
-    <p class="research-detail-caption"><i>(a) The RDE test stand and air supply in the high bay. (b) The engine during a hot fire. (c) Detonation wave angle against time, showing a stable single wave. (d) High-speed imaging of the wave circling the annulus.</i></p>
+    <img src="/assets/img/research/facility_overview.jpg" alt="Four views of the lab: the HADES rotating detonation engine test stand and air supply in the high bay, the engine during a hot fire, a wave angle versus time map of the detonation, and a high-speed image sequence of the wave circling the annulus">
+    <p class="research-detail-caption"><i>(a) The HADES test stand and air supply in the high bay. (b) The engine during a hot fire. (c) Detonation wave angle against time, showing a stable single wave. (d) High-speed imaging of the wave circling the annulus.</i></p>
   </div>
 
   <div class="research-detail-top__text">
     <p>
       The lab operates out of a dedicated high-bay space at 2420 Alamo Ave SE in Albuquerque, a few
-      minutes from UNM's main campus. It is built around a rotating detonation engine configured as
-      a materials testbed: the purpose is not to optimize the thermodynamic performance, but to put candidate wall materials into a real detonation environment and measure what happens to them.
+      minutes from UNM's main campus. It is built around <b>HADES</b> (Hot and Durable Engine System),
+      a rotating detonation engine configured as a materials testbed: the purpose is not to optimize
+      the thermodynamic performance, but to put candidate wall materials into a real detonation
+      environment and measure what happens to them.
     </p>
     <p>
       Because the walls are swappable and the operating point repeatable, materials can be
@@ -30,7 +32,7 @@ mode: dark
     </p>
     <p>Capabilities include:</p>
     <ul>
-      <li><ins>Rotating detonation engine testbed:</ins> Fuel-agnostic air breathing operation with instrumented, swappable wall sections for materials evaluation.</li>
+      <li><ins>HADES rotating detonation engine testbed:</ins> Fuel-agnostic air breathing operation with instrumented, swappable wall sections for materials evaluation.</li>
       <li><ins>Thermal instrumentation:</ins> Calorimetric heat flux measurement, embedded thermocouples, and thin-film surface temperature sensors for high-rate transient loading.</li>
       <li><ins>High-speed diagnostics:</ins> Imaging and high-rate pressure acquisition to resolve wave number, wave speed, and stability across a hot fire test.</li>
       <li><ins>Forced-convection flow loop:</ins> A separate instrumented rig for measuring friction and heat transfer in additively manufactured cooling channels.</li>
@@ -47,7 +49,7 @@ mode: dark
     <h3>High-Bay Test Space</h3>
     <p>
       A dedicated off-campus facility sized for engine testing, with the standoff and services
-      that detonation experiments require.
+      that HADES requires.
     </p>
   </div>
 

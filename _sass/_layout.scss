@@ -231,6 +231,14 @@ body {
   color: var(--global-text-color);
 }
 
+// Kept on one line at any width the hero title can occupy, so the font size
+// shrinks with viewport width rather than wrapping to a second line.
+.homepage-hero__tagline {
+  display: inline-block;
+  font-size: clamp(0.75rem, 2.6vw, 1.5rem);
+  white-space: nowrap;
+}
+
 .homepage-hero__window {
   width: 100%;
   max-width: 1100px;

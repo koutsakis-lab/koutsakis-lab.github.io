@@ -880,6 +880,12 @@ article ~ .publications {
   // font-weight:bolder;
 }
 
+.request-paper-btn {
+  font-family: "Aptos", "Calibri", "Segoe UI", Roboto, sans-serif;
+  font-size: 11pt;
+  color: var(--global-text-color); // automatic: follows the theme, not forced
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){
       if (linkBar.querySelectorAll('.open-access-link').length > 0) return;
       let title = encodeURIComponent(e.querySelectorAll('.title')[0].textContent);
       let newLink = document.createElement('a');
-      newLink.classList += 'btn btn-sm z-depth-0'
+      newLink.classList += 'btn btn-sm z-depth-0 request-paper-btn'
       newLink.href = 'mailto:koutsakis@unm.edu?subject=Requesting publication&body=Hello,%0D%0A%0D%0ACould you provide a copy of the paper "'+title+'" please?%0D%0A%0D%0AThank you!'
       newLink.innerHTML = 'Request paper'
       linkBar.appendChild(newLink)
