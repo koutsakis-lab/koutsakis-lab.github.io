@@ -235,7 +235,7 @@ body {
 // shrinks with viewport width rather than wrapping to a second line.
 .homepage-hero__tagline {
   display: inline-block;
-  font-size: clamp(0.75rem, 2.6vw, 1.5rem);
+  font-size: clamp(0.9rem, 3.12vw, 1.8rem);
   white-space: nowrap;
 }
 
