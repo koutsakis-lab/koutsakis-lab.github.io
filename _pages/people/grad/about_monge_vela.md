@@ -3,4 +3,4 @@
 
 Max works on design and analysis of radiation barrier coatings for high-temperature propulsion materials.
 
-[linkedin](https://www.linkedin.com/in/maximiliano-monge-vela-314688241)
+[email](mailto:mmongevela99@unm.edu) \| [linkedin](https://www.linkedin.com/in/maximiliano-monge-vela-314688241)
