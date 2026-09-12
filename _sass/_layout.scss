@@ -248,7 +248,6 @@ body {
 }
 
 .homepage-hero__window {
-  position: relative;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -256,28 +255,6 @@ body {
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
   background: var(--global-bg-color); // neutral backdrop behind the hero media while it loads
-}
-
-// UNM wordmark, pinned to the corner of the hero media. The dark scrim behind
-// it guarantees contrast against whatever part of the photo/video sits
-// underneath (sky, foliage, etc.) rather than relying on the image itself.
-.homepage-hero__wordmark-badge {
-  position: absolute;
-  top: clamp(0.6rem, 2vw, 1.25rem);
-  right: clamp(0.6rem, 2vw, 1.25rem);
-  display: flex;
-  align-items: center;
-  padding: 0.45em 0.65em;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(2px);
-  z-index: 2;
-}
-
-.homepage-hero__wordmark {
-  display: block;
-  width: clamp(64px, 11vw, 140px);
-  height: auto;
 }
 
 // Hero media: the static placeholder image now, the simulation reel later.
