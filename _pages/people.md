@@ -34,14 +34,14 @@ profiles:
     image: people/samra.jpeg
     content: people/grad/about_samra.md
   - align: left
-    image: people/monge_vela.jpeg
-    content: people/grad/about_monge_vela.md
+    image: people/wolbrecht.jpeg
+    content: people/grad/about_wolbrecht.md
   - align: left
     image: people/reyes_contreras.jpeg
     content: people/grad/about_reyes_contreras.md
   - align: left
-    image: people/wolbrecht.jpeg
-    content: people/grad/about_wolbrecht.md
+    image: people/monge_vela.jpeg
+    content: people/grad/about_monge_vela.md
   - align: left
     content: people/header_undergrad.md
   - align: left
