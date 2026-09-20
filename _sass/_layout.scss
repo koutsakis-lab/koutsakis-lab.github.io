@@ -69,7 +69,7 @@ body.sticky-bottom-footer {
 .banner {
   max-height: 45vh;
   object-fit: cover;
-  object-position: center top; // keep faces in frame; the crop grows from the bottom
+  object-position: center 42%; // keep faces in frame, crop out the equipment above people's heads
 }
 
 // On a narrow/tall phone screen, width is the binding constraint and the
