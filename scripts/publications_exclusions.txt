@@ -15,3 +15,7 @@
 # "Reprint of: Surface temperature of a multi-layer thermal barrier coated wall..."
 # — Elsevier reprint duplicate of 10.1016/j.ijheatmasstransfer.2020.119645
 10.1016/j.ijheatmasstransfer.2020.120187
+
+# Duplicate of the 10.13052/rp-9788743814191a08 chapter (same title, same
+# pages, River Publishers eBook-level record)
+10.1201/9788743813897-8
