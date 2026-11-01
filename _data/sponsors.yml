@@ -16,6 +16,7 @@
   current: true
 - name: DEVCOM Army Research Laboratory
   logo: arl_logo.png
+  logo_dark: arl_logo_dark.png
   url: https://arl.devcom.army.mil
   current: true
 - name: Solvus Global
@@ -30,11 +31,6 @@
   logo: netl_logo.png
   logo_dark: netl_logo_dark.png
   url: https://netl.doe.gov
-  current: true
-- name: Sandia National Laboratories
-  logo: sandia_logo_light.png
-  logo_dark: sandia_logo.png
-  url: https://www.sandia.gov
   current: true
 - name: Aerojet Rocketdyne | L3Harris
   logo: ajrd_logo.jpg
@@ -51,4 +47,9 @@
 - name: Air Force Research Laboratory
   logo: afrl_logo.png
   url: https://www.afrl.af.mil
+  current: true
+- name: Sandia National Laboratories
+  logo: sandia_logo_light.png
+  logo_dark: sandia_logo.png
+  url: https://www.sandia.gov
   current: true
