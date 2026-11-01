@@ -708,6 +708,18 @@ article.large {
   object-fit: contain;
 }
 
+.sponsors__img--dark {
+  display: none;
+}
+
+html[data-theme="dark"] .sponsors__img--dark {
+  display: inline;
+}
+
+html[data-theme="dark"] .sponsors__img--light {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .sponsors__grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

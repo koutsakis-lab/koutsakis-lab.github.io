@@ -3,6 +3,8 @@
 #
 # `logo` is a filename in assets/img/logos/.
 # `url`  is optional — when present the logo becomes a link.
+# `logo_dark` is optional — a variant shown instead of `logo` in the dark
+#   theme (e.g. a white-text wordmark that would vanish on the light page).
 
 - name: U.S. Department of War
   logo: dow_logo.png
@@ -26,7 +28,13 @@
   current: true
 - name: National Energy Technology Laboratory
   logo: netl_logo.png
+  logo_dark: netl_logo_dark.png
   url: https://netl.doe.gov
+  current: true
+- name: Sandia National Laboratories
+  logo: sandia_logo_light.png
+  logo_dark: sandia_logo.png
+  url: https://www.sandia.gov
   current: true
 - name: Aerojet Rocketdyne | L3Harris
   logo: ajrd_logo.jpg
