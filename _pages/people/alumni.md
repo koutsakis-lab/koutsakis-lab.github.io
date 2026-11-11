@@ -1,6 +1,5 @@
 ### Master's Students
 
-- **Kerly Reyes-Contreras** (2026)
 - **Perla Salinas** (2026)
 
 ### Past Visitors
