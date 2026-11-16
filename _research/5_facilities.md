@@ -13,8 +13,8 @@ mode: dark
 <!-- Top section -->
 <div class="research-detail-top">
   <div class="research-detail-top__figure">
-    <img src="/assets/img/research/facility_overview.jpg" alt="Four views of the lab: the HADES rotating detonation engine test stand and air supply in the high bay, the engine during a hot fire, a wave angle versus time map of the detonation, and a high-speed image sequence of the wave circling the annulus">
-    <p class="research-detail-caption"><i>(a) The HADES test stand and air supply in the high bay. (b) The engine during a hot fire. (c) Detonation wave angle against time, showing a stable single wave. (d) High-speed imaging of the wave circling the annulus.</i></p>
+    <img src="/assets/img/research/facility_overview.jpg" alt="Four views of the lab: the HADES rotating detonation engine test stand in the high bay, the engine during a hot fire, a wave angle versus time map of the detonation, and a high-speed image sequence of the wave circling the annulus">
+    <p class="research-detail-caption"><i>(a) The HADES test stand in the high bay. (b) The engine during a hot fire. (c) Detonation wave angle against time, showing a stable single wave. (d) High-speed imaging of the wave circling the annulus.</i></p>
   </div>
 
   <div class="research-detail-top__text">

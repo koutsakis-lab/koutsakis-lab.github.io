@@ -10,10 +10,13 @@ path.
                                                        # with panel guides
 
 The master is `scripts/figures/facility_overview_master.png`, a 1950x2400
-lossless copy of the four-panel figure with the air compressor's model
-number already painted out. Work from it rather than from the copy in the
-NSF CAREER folder: that original still carries the model number, and it must
-not end up in this repo, which is public.
+lossless copy of the four-panel figure. Panel (a) is a tight crop of the
+test stand alone (portrait, centred in the band, with its "a)" label in the
+left margin like b) and d)). The earlier wide shot also showed the air
+compressor, whose model number had to be painted out. Work from this master
+rather than from the copy in the NSF CAREER folder: that original still
+carries the model number, and it must not end up in this repo, which is
+public.
 
 Panel boundaries in master pixels, measured from the white gutters
 (left, top, right, bottom) -- see PANELS below. Panels (b) and (c) sit side
@@ -57,7 +60,7 @@ MASTER = os.path.join(HERE, "figures", "facility_overview_master.png")
 OUT = os.path.join(ROOT, "assets", "img", "research", "facility_overview.jpg")
 
 PANELS = {
-    "a  test stand": (176, 0, 1774, 1390),
+    "a  test stand": (376, 0, 1574, 1390),
     "b  hot fire": (176, 1483, 803, 2030),
     "c  wave map": (861, 1442, 1773, 2100),
     "d  high-speed": (176, 2150, 1774, 2399),
